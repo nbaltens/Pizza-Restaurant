@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>The Pizza Shop</title>
+<link href="https://fonts.googleapis.com/css?family=Cookie&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+<header>    
+    <div id="nav" class="nav">
+                    <ul id="nav_items">
+                        <li><a href="./main.html">HOME</a></li>
+                        <li><a href="./menu_page/menu.html">MENU</a></li>
+                        <li><a href="#reservation">RESERVATION</a></li>
+                        <li><a href="#footer">CONTACT</a></li>
+                    </ul>
+                </div>
+    <div class="banner_content">
+
+        <h2>The</h2>
+        <h1>Pizza Shop</h1>
+        <h3>The Woodlands TX</h3>
+    </div>
+</header>
+<div id="seperator"></div>
+
+<section class="story">
+    <div class="story_content">
+        <button>Our Story</button>
+        <h1>A Passion For Pizza</h1>
+        <img src="img/story_img.jpg">
+        <p>The story of pizza is a long one. From the Greeks to the Egyptians, from the Persians to the Indians, there have been incarnations of pizza served throughout history. Flatbreads, naan, and plakountos are all early preparations that could be considered cousins to the modern pizza, but there isn’t a consensus as to which is first and whether these could even be considered precursors to pizza at all. </p>
+    </div>
+</section>
+<section class="order">
+<a class="anchor_menu"href="menu_page/menu.html">
+    <div class="menu">
+            <p>MENU</p>
+    </div>
+</a>
+</section>
+<div id="seperator"></div>
+<section class="reservation">
+        <button>Reservation</button>
+        <h1>MAKE A RESERVATION</h1>
+
+        <form id="reservation"class="form" onSubmit="return reserveSubmit()">
+                <label for="name">Name:</label>
+                <input type="text" placeholder="Name" id="name" name="name" required>
+                <label for="phone">Phone:</label>
+                <input type="number" id="number" name="number" placeholder="Phone-Number" required>
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+                <label for="time">Time:</label>
+                <select id="time" name="time" required >
+                    <option>Time</option>
+                    <option>10:00am</option>
+                    <option>11:00am</option>
+                    <option>12:00pm</option>
+                    <option>1:00pm</option>
+                    <option>2:00pm</option>
+                    <option>3:00pm</option>
+                    <option>4:00pm</option>
+                    <option>5:00pm</option>
+                    <option>6:00pm</option>
+                    <option>7:00pm</option>
+                    <option>8:00pm</option>
+                    <option>9:00pm</option>
+                    <option>10:00pm</option>
+                    <option>11:00pm</option>
+                </select>
+                <label for="party">Party Size</label>
+                <select name="party" id="party" required>
+                    <option>Party Size</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>10+</option>
+                </select>
+                <input type="submit" id="reservation-btn"> 
+        </form>
+        <div id="reservation-submition"></div>
+</section>
+
+<section class="menu_showcase">
+        <ul class="meals-showcase clearfix">
+            <li>
+                <figure class="meal-photo">
+                    <img src="img/one.jpg" alt="Korean bibimbap with egg and vegetables">
+                </figure>
+            </li>
+            <li>
+                <figure class="meal-photo">
+                    <img src="img/two.jpg" alt="Simple italian pizza with cherry tomatoes ">
+                </figure>
+            </li>
+            <li>
+                <figure class="meal-photo">
+                    <img src="img/three.jpg" alt="Chicken breast steak with vegetables">
+                </figure>
+            </li>
+            <li>
+                <figure class="meal-photo">
+                    <img src="img/four.jpg" alt="Autumn pumpkin soup">
+                </figure>
+            </li>
+        </ul>
+
+        <ul class="meals-showcase clearfix">
+            <li>
+                <figure class="meal-photo">
+                    <img src="img/7.jpg" alt="Paleo beef steak with vegetables">
+                </figure>
+            </li>
+            <li>
+                <figure class="meal-photo">
+                    <img src="img/pizzasix.jpg" alt="Healthy baguette with egg and vegetables">
+                </figure>
+            </li>
+            <li>
+                <figure class="meal-photo">
+                    <img src="img/pizzafive.jpg" alt="Burger with cheddar and bacon ">
+                </figure>
+            </li>
+            <li>
+                <figure class="meal-photo">
+                    <img src="img/8.jpg" alt="Granola with cherries and strawberries">
+                </figure>
+            </li>
+        </ul>
+</section>
+
+<footer>    
+        <div class="footer_content">
+            
+            <h1>COME GRAB A SLICE!</h1>
+            <div class="foot_container" id="footer">
+            <div class="info">
+            <p class="address"> 500 Woodlands Pkwy. <br>The Woodlands, TX 77316</p>
+            <p class="hours"> Monday &#8208 Friday 10:00AM &#8208 9:00PM <br> Saturday &#8208 Sunday  10:00AM &#8208 11:00PM</p>
+            <p class="contact"> Tel: (123) 456 &#8208 7890 <br> Email: service@pizzaco.com</p>
+            </div>
+            <div id="map"></div>
+            </div>
+        </div>
+    </footer>
+
+
+<script src="main.js"></script>
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5T1Kj65PxB9u2y5LwSYaAJkhVCsyA2Eg&callback=initMap"></script>
+
+
+
+</body>
+</html>
