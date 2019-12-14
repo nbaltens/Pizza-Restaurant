@@ -1,0 +1,329 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+html {
+    scroll-behavior: smooth;
+  }
+
+
+header {
+    background-image: linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.3)), url(img/banner-pizza.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+    
+/* --- BANNER ---*/
+    
+}
+.banner_content {
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.banner_content h2 {
+    font-size: 65px;
+    font-family: 'Cookie', cursive;
+    letter-spacing: .03em;
+    margin-bottom: 0px;
+}
+.banner_content h1 {
+    font-size: 110px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: .05em;
+}
+.banner_content h3 {
+    font-size: 18;
+    font-family: Helvetica, Arial, sans-serif;
+}
+#seperator {
+height: 10px;
+width: 100%;
+background-color: #222;
+margin: 0;
+padding: 0;
+}
+#nav {
+    width: 100%;
+    height: 70px;
+    background-color: #222; 
+    position: fixed;
+    z-index: 10;
+}
+#nav li {
+    display: inline-block;
+    font-size: 20px;
+    padding: 25px;
+    cursor: pointer;
+    color: white;
+}
+#nav li a {
+    color: white;
+    text-decoration:none;
+}
+#nav_items {
+    text-align: center;
+}
+
+/* --- STORY ---*/
+
+.story{
+   height: 100%;
+   width: 100%;
+}
+.story_content button {
+    background-color: #222;
+    display: block;
+    color: #fff;
+    width: 325px;
+    height: 45px;
+    font-size: 20px;
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0 auto; 
+    margin-top: 0px;
+    border: none;  
+}
+.story_content h1 {
+    display: block;
+    margin: 30px auto;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #222;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 58px;
+}
+.story_content img {
+    height: 400px;
+    width: 600px;
+    display: block;
+    margin: 20px auto;
+}
+.story_content p {
+    text-align: center;
+    width: 600px;
+    display: block;
+    margin: 20px auto;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #535353;
+    line-height: 25px;
+    padding: 10px;
+}
+
+.order {
+    background-image: linear-gradient(rgb(0, 0, 0, 0.8), rgb(0, 0, 0, 0.7)), url(img/menu_mainOne.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    background-attachment: fixed;
+    text-align: center;
+    
+}
+.menu {
+    border: solid white 9px;
+    display: inline-block;
+    padding: 20px;
+    height: 300px;
+    width: 300px;
+    margin: 120px;
+    transform: rotate(45deg);
+ 
+}
+.menu {
+    text-decoration: none;
+}
+
+.menu p {
+    font-size: 54px;
+    color: #fff;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    transform: rotate(-45deg);
+    position: relative;
+    top: 83px;
+}
+
+.menu:hover {
+    background-color:black;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+/* --- RESERVATION ---*/
+
+.reservation {
+    height: 100vh;
+}
+.reservation_content {
+    display: block;
+}
+
+.reservation button {
+    background-color: #222;
+    display: block;
+    color: #fff;
+    width: 325px;
+    height: 45px;
+    font-size: 20px;
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0 auto; 
+    margin-top: 0px;
+    border: none;  
+}
+.reservation h1 {
+    display: block;
+    margin: 30px auto;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #222;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 58px;
+}
+.reservation .form {
+    margin: 10px auto;
+    width: 30%;
+}
+
+.form label {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
+    font-size: 14px;
+
+}
+
+.form input,
+.form select {
+    width: 100%;
+    height: 40px;
+}
+.form input[type="date"],
+.form input[type="text"],
+.form input[type="number"],
+.form input[type="submit"],
+.form #time,
+.form #party  {
+font-size: 15px;
+font-family: Helvetica, Arial, sans-serif;
+height: 40px;
+font-size: 
+color: #222;
+border: solid gray 1px;
+background-color: white;
+margin: 5px;
+padding: 3px;
+}
+.form input[type="submit"] {
+    cursor: pointer;
+}
+.form input[type="submit"] {
+    background-color: #222;
+    color: white;
+    border-radius: 2px;
+}
+#reservation-submition {
+    color: #222;
+    font-size:20px;
+    text-align: center;
+    margin: 15px;
+}
+
+
+.menu_showcase{
+	padding: 0;
+}
+.meals-showcase{
+	width: 100%;
+	list-style: none;
+}
+.meals-showcase li{
+	width: 25%;
+	float: left;
+	display: block;
+}
+.meal-photo{
+	width: 100%;
+	margin: 0;
+	overflow: hidden;
+	background-color: black;
+
+}
+.meal-photo img{
+	opacity: 0.7;
+    width: 100%;
+	height: auto;
+	margin: auto;
+	transform: scale(1.15);
+	transition: transform 0.5s, opacity 0.5s;
+
+}
+.meal-photo img:hover{
+	transform: scale(1.03);
+	opacity: 1.0;
+}
+.clearfix {zoom: 1;}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+} 
+footer {
+    height: 70vh;
+    width: 100%;
+    background-color: #222;
+
+}
+.footer_content h1 {
+
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+.info {
+    color: white;
+    text-align: center;
+}
+.info p {
+    font-size: 16px;
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 30px;
+    line-height: 30px;
+}
+.foot_container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    position: absolute;
+}
+
+
+#map {
+    height: 275px; 
+    width: 550px;  
+    
+   }
+
+
+   @media screen and (max-width: 900px) {
+    #nav li {
+        font-size: 15px; 
+    }
+    #reservation {
+        width: 55%;
+    }
+    .story_content p {
+    width: 400px;
+    padding: 20px;
+}
+
+  }
+
