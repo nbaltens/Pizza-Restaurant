@@ -90,7 +90,17 @@
     #nav li {
         font-size: 15px; 
     }
-
-
   }
+
+  @media screen and (max-width: 600px) {
+     .menu_container {
+         margin: 0px auto;
+     }
+     .menu_banner {
+        height: 60vh;
+        background-position: center;
+    
+}
+  }
+
 
