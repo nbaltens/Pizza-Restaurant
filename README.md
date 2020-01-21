@@ -1,2 +1,2 @@
 # Pizza-Restaurant
-Restaurant Website
+A restaurant website built with plain HTML CSS and Javascript.
