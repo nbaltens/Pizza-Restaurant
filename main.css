@@ -158,7 +158,15 @@ padding: 0;
 
 .reservation {
     height: 100vh;
+    background-color: #fcfcfc;
 }
+.reserve_head {
+    font-size: 40px;
+    text-align: center;
+    padding-top: 80px;
+    color: #222;
+}
+
 .reservation_content {
     display: block;
 }
@@ -204,14 +212,12 @@ padding: 0;
 }
 .form input[type="date"],
 .form input[type="text"],
-.form input[type="number"],
 .form input[type="submit"],
 .form #time,
 .form #party  {
 font-size: 15px;
 font-family: Helvetica, Arial, sans-serif;
 height: 40px;
-font-size: 
 color: #222;
 border: solid gray 1px;
 background-color: white;
@@ -232,6 +238,9 @@ padding: 3px;
     text-align: center;
     margin: 15px;
 }
+.form input{
+    display: inline-block;
+} 
 
 
 .menu_showcase{
@@ -266,7 +275,10 @@ padding: 3px;
 	transform: scale(1.03);
 	opacity: 1.0;
 }
-.clearfix {zoom: 1;}
+.clearfix {
+    zoom: 1;
+}
+
 .clearfix:after {
     content: '.';
     clear: both;
@@ -312,6 +324,23 @@ footer {
     
    }
 
+   @media screen and (max-width: 500px) {
+    .order {
+        height: auto;
+   }
+   .reservation {
+       height: auto;
+   }
+   .reservation form {
+       width: 100%;
+   }
+   header {
+       height: 90vh;
+   }
+
+}
+
+
 
    @media screen and (max-width: 900px) {
     #nav li {
@@ -325,5 +354,4 @@ footer {
     padding: 20px;
 }
 
-  }
-
+   }
