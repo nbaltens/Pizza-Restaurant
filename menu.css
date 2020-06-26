@@ -4,10 +4,10 @@
     box-sizing: border-box;
 }
 .menu_banner {
-    background-image: linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.3)), url(../img/resturaunt_interior.jpg);
+    background-image: linear-gradient(rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.4)), url(../img/pizzaOne.jpg);
     background-size: cover;
     background-position: bottom;
-    height: 85vh;
+    height: 100vh;
     background-attachment: fixed;
 }
 #nav {
@@ -59,7 +59,7 @@
     justify-content: space-evenly;
 }
 .food_container .item {
-    width: 100%
+    width: 100%;
     flex: 0 50%;
     box-sizing:border-box;
     text-align: center;
@@ -85,6 +85,12 @@
     text-align: center;
 }
 
+@media screen and (min-width: 600px) {
+    .menu_mobile {
+        display: none;
+    }
+}
+
 
 @media screen and (max-width: 900px) {
     #nav li {
@@ -97,10 +103,23 @@
          margin: 0px auto;
      }
      .menu_banner {
-        height: 60vh;
+        height: 70vh;
         background-position: center;
-    
-}
+    }
+    .menu_mobile {
+        position: relative;
+        bottom: 250px;
+        text-align: center;
+        color: white;
+        font-size: 50px;
+    }
+    .menu h2 {
+        padding-top: 0px;
+    }
+   
+    .menu_container h1 {
+        display: none;
+    }
   }
 
 
