@@ -1,16 +1,9 @@
-const reservationBtn = document.getElementById('reservation-btn');
-const reservationSubmitOutput = document.getElementById('reservation-submition');
 
-// reservationBtn.addEventListener('submit', function(e) {
-//     reservationSubmitOutput.innerHTML = "Thank You for your Reservation!"
-//     e.preventDefault();
-// })
-
-function reserveSubmit() {
-reservationSubmitOutput.innerHTML = "Thank You for your Reservation!"
-
-}
-
+const reserveBtn = document.getElementById('reservation-btn');
+const name = document.getElementById('name');
+  reserveBtn.addEventListener('click', () => {
+    alert("Thank you for reserving a table with us!")
+});
 
 function initMap() {
   // The location of Uluru
